@@ -1,4 +1,5 @@
-name: pagePublic
+
+name: publish
 on:
   push:
     branches:
@@ -13,14 +14,7 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
-      - run: npm run buildPage
       - run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: JS-DevTools/npm-publish@v1
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./page
-          EXTERNAL_REPOSITORY: PixiColorEffects/PixiColorEffects.github.io
-          PUBLISH_BRANCH: main
-          keep_files: false
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
