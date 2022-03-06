@@ -1,0 +1,60 @@
+{
+  "name": "pixi-losing-connection-effect",
+  "version": "1.0.0",
+  "description": "Simulate Losing Connection Effect for pixijs, AKA Zoom Escaper",
+  "main": "./dist/pixi-losing-connection-effect.umd.js",
+  "module": "./dist/pixi-losing-connection-effect.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixiColorEffects/pixi-losing-connection-effect.git"
+  },
+  "homepage": "https://github.com/PixiColorEffects/pixi-losing-connection-effect#readme",
+  "bugs": {
+    "url": "https://github.com/PixiColorEffects/pixi-losing-connection-effect/issues"
+  },
+  "scripts": {
+    "serve": "vite",
+    "build": "vite build && tsc -p ./tsconfig.dist.json -emitDeclarationOnly && tsc-alias -p ./tsconfig.dist.json"
+  },
+  "keywords": [
+    "pixijs",
+    "effects",
+    "filters",
+    "Bad Connection",
+    "Losing Connection",
+    "unstable connection"
+  ],
+  "author": "carl-jin",
+  "license": "MIT",
+  "dependencies": {
+    "pixi.js": "^6.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "vite": "^2.8.6",
+    "@types/pixi.js": "^5.0.0",
+    "prettier": "^2.5.1",
+    "fhead": "^3.2.7",
+    "tsc-alias": "^1.6.3",
+    "typescript": "^4.6.2"
+  },
+  "fhead": {
+    "comment": "/** Do not use this config in production! */",
+    "root": "dist",
+    "repository": "https://github.com/PixiColorEffects/pixi-losing-connection-effect.git",
+    "patterns": [
+      ".js"
+    ],
+    "exclude": [],
+    "name": "CarlJin",
+    "email": "buffpal2016@gmail.com",
+    "license": "MIT",
+    "licenseText": "pixi-losing-connection-effect is licensed under the MIT License.",
+    "copyright": "https://github.com/PixiColorEffects/pixi-losing-connection-effect/blob/main/LICENSE",
+    "renewAll": true
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Losing Connection</title>
+    <script src="./exmaple/index.ts" type="module"></script>
+  </head>
+  <body>
+    <h1>Losing Connection</h1>
+    <div class="center">
+      <canvas id="canvasOutput"></canvas>
+    </div>
+
+    <div class="controls">
+      <button id="on">On</button>
+      <button id="off">Off</button>
+
+      <h3>Delay Level</h3>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="75"
+        class="slider"
+        id="delayLevel"
+      />
+
+      <button id="destroy">Destroy</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #919bac;
+  background-color: #272d37;
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.center {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.canvasOutput {
+  margin: 0 auto;
+}
+
+.controls {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.controls input{
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 4px 8px;
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(53, 62, 80);
+  color: #fff;
+  background-color: #2c3340;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px #0000000d;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #1e2534;
+}
+
+button:active {
+  background-color: #090c11;
+}
